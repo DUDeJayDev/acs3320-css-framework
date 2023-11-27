@@ -1,15 +1,21 @@
 <html>
 <head>
-	<title>CSS Framework Starter Sample</title>
-	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS Framework Preview</title>
+	<meta name="description" content="github:DUDeJayDev/simple.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./simple.css">
 </head>
-<!-- Page Wraper -->
+
 <body class="dark">
-	<!-- Page Navigation -->
 	<div class="navbar">
 		<ul>
-			<li><h1 class="title">Framework Name</h1></li>
-			<!-- <li><a href="#colors">Colors</a></li> -->
+			<li><h1 class="title">simple.css</h1></li>
+			<li><a href="#colors">Colors</a></li>
 			<li><a href="#navbar">Navbar</a></li>
 			<li><a href="#headings">Headings</a></li>
 			<li><a href="#type">Type</a></li>
@@ -21,14 +27,12 @@
 		</ul>
 
 		<ul>
-			<li><a href="link/to/your/framework/repo">GitHub</a></li>
+			<li><a href="https://github.com/dudejaydev/simple.css">GitHub</a></li>
 		</ul>
 	</div>
 
 	<!-- main content -->
-  <div class="container main">
-
-		<!-- --------------------------- -->
+	<div class="container main">
 		<!-- Headings -->
 		<section id="headings">
 			<h1>Headings</h1>
@@ -51,18 +55,18 @@
 				</code>
 			</pre>
 		</section>
-		<!-- --------------------------- -->
 		
-		<!-- --------------------------- -->
 		<!-- Paragraph Style -->
 		<section id="type">
 			<h1>Paragraph styles</h1>
-			<p>This is the <strong>strong tag</strong> in a paragraph. 
+			<p>
+				This is the <strong>strong tag</strong> in a paragraph. 
 				This is the <em>em tag in a paragraph</em>, elements such 
 				as &lt;strong&gt; and &lt;em&gt; are inline. Here is an 
 				example of the <abbr>abbreviation tag.</abbr> You'd use
 				abbr for things like <abbr title="Hyper Text Markup Language">HTML</abbr>
-				and <abbr title="Cascading Stylesheets">CSS</abbr>.</p>
+				and <abbr title="Cascading Stylesheets">CSS</abbr>.
+			</p>
 			
 			<pre>
 				<code>
@@ -70,16 +74,14 @@
 				</code>
 			</pre>
 		</section>
-		<!-- ----------------------------- -->
 
-		<!-- --------------------------- -->
 		<!-- Button Styles -->
 		<section id="buttons">
 			<h2>Buttons</h2>
 
 			<p>This is your average button. You might want to click it.</p>
 			
-			<p><button>Submit</button></p>
+			<button>Submit</button>
 
 			<pre>
 				<code>
@@ -88,14 +90,14 @@
 			</pre>
 
 			<p>This button has consequences. You might want to think twice before clicking.</p>
-			<p>Custimize buttons by adding CSS variables inline or with a class.</p>
+			<p>Customize buttons by adding CSS variables inline or with a class.</p>
 			<p>
-<button 
-	style="--weight: bold; --background-color: #f85353;"
->Delete</button>
-	<button 
-	style="--background-color: #6bc253;"
->Go!</button>
+				<button 
+					style="--weight: bold; --background-color: #f85353;">
+					Delete</button>
+				<button 
+					style="--background-color: #6bc253;">
+					Go!</button>
 			</p>
 
 			<pre>
@@ -111,9 +113,7 @@
 				</code>
 			</pre>
 		</section>
-		<!-- --------------------------- -->
 
-		<!-- --------------------------- -->
 		<!-- Link styles -->
 		<section>
 			<h2>Links</h2>
@@ -127,9 +127,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 			</pre>
 		
 		</section>
-		<!-- --------------------------- -->
 
-		<!-- --------------------------- -->
 		<!-- Form Styles -->
 		<section>
 			<h2>Forms and controls</h2>
@@ -150,7 +148,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 				</label>
 
 				<label>
-					<span>Your comments</span>
+					<span>Your comments:</span>
 					<textarea placeholder="Your comment"></textarea>
 				</label>
 
@@ -189,42 +187,33 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 &#x9;&lt;span&gt;&lt;/span&gt;
 &lt;/label&gt;
 				</code>
-						</pre>
+			</pre>
 
 		</section>
 
-		<!-- --------------------------- -->
 		<!-- Colors -->
 		<section id="colors">
 			<h1>Colors</h1>
 			<div class="color-grid">
-				
-				<div style="background-color: var(--color-background)">--color-background</div>
-				<div style="background-color: var(--color-foreground); color: var(--color-background)">--color-foreground</div>
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-dark</div>
-				
-				<div style="background-color: var(--color-light)">--color-light</div>
-				
-				<div style="background-color: var(--color-md-light)">--color-md-light</div>
-				
-				<div style="background-color: var(--color-dark); color: var(--color-background)">--color-md-dark</div>
-				
-				<div style="background-color: var(--color-primary); color: var(--color-background)">--color-primary</div>
-				
-				<div style="background-color: var(--color-info); color: var(--color-background)">--color-info</div>
-				
-				<div style="background-color: var(--color-success); color: var(--color-background)">--color-success</div>
-				
-				<div style="background-color: var(--color-danger); color: var(--color-background)">--color-danger</div>
-				
-				<div style="background-color: var(--color-callout)">--color-callout</div>
-				<div style="background-color: var(--color-lightest)">--color-lightest</div>
+				<div style="background-color: var(--background)">--background</div>
+				<div style="background-color: var(--dark); color: var(--text-white)">--dark</div>
+				<div style="background-color: var(--light)">--light</div>
+				<div style="background-color: var(--red);">--red</div>
+				<div style="background-color: var(--orange);">--orange</div>
+				<div style="background-color: var(--yellow);">--yellow</div>
+				<div style="background-color: var(--green);">--green</div>
+				<div style="background-color: var(--teal);">--teal</div>
+				<div style="background-color: var(--cyan);">--cyan</div>
+				<div style="background-color: var(--blue);">--blue</div>
+				<div style="background-color: var(--purple);">--purple</div>
+				<div style="background-color: var(--pink);">--pink</div>
+				<div style="background-color: var(--primary);">--primary</div>
+				<div style="background-color: var(--info); color: var(--text-white)">--info</div>
+				<div style="background-color: var(--success); color: var(--background)">--success</div>
+				<div style="background-color: var(--danger); color: var(--background)">--danger</div>
 			</div>
 		</section>
-		<!-- --------------------------- -->
 		
-
-		<!-- --------------------------- -->
 		<!-- Nav Bar styles -->
 		<section id="navbar">
 			<h1>Navbar</h1>
@@ -261,9 +250,6 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 
 		</section>
 		
-		
-		
-		<!-- --------------------------- -->
 		<!-- Footer Styles -->
 		<section id="footers">
 			<h2>Page Footer</h2>
@@ -290,7 +276,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 				</ul>
 			</div>
 		</section>
-  </div>
+	</div>
 	<div class="page-footer">
 		<ul>
 			<li><h3>Content</h3></li>
@@ -309,7 +295,7 @@ href=&quot;#&quot;&gt;links&lt;/a&gt; to show off their styles in context.&lt;/p
 		
 		<ul>
 			<li><h3>Contact</h3></li>
-			<li><a href="https://github.com/soggybag/frmwrk-css">GitHub</a></li>
+			<li><a href="https://github.com/dudejaydev/simple.css">GitHub</a></li>
 		</ul>
 	</div>
 </body>
